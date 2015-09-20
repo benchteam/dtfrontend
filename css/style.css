@@ -1,8 +1,31 @@
 @font-face {
 
-    font-family: 'HelveticaNeue-Light';
+    font-family: HelveticaNeue-Light;
     src:url('../fonts/HelveticaNeue-Light.otf');
     font-weight: 300;
+
+    font-family: HelveticaNeue-Bold;
+    src:url('../fonts/HelveticaNeue-Bold.otf');
+	
+	font-family: SanFranciscoDisplay-Light;
+    src:url('../fonts/SanFranciscoDisplay-Light.otf');
+	font-weight:100;
+	
+	font-family: SanFranciscoDisplay-Heavy;
+    src:url('../fonts/SanFranciscoDisplay-Heavy.otf');
+	font-weight:300;
+	
+	font-family: SanFranciscoDisplay-Black;
+    src:url('../fonts/SanFranciscoDisplay-Black.otf');
+	font-weight:400;
+	
+	font-family: SanFranciscoDisplay-Regular;
+    src:url('../fonts/SanFranciscoDisplay-Regular.otf');
+	font-weight:normal;	
+	
+	font-family: SanFranciscoText-Bold;
+	font-weight: 200;
+	src: url('../fonts/SanFranciscoText-Bold.otf');
 }
 
 *{margin:0px; padding:0px;}
@@ -11,7 +34,7 @@
 .main{ background:#f2f2f2;}
 .main-sub{width:1500px; margin:0 auto; background:#FFF;}
 .main-ba{width:1500px; margin:0 auto; background:url(../images/header-ba.jpg) top left repeat-x;}
-.main-sub1{width:980px; margin:0 auto;}
+.main-sub1{width:1000px; margin:0 auto; padding-left:10px; padding-right:10px;}
 
 /*header styles*/
 .header-menu{}
@@ -26,7 +49,7 @@
 }
 .nav-bar {
 	float:left;
-	padding:20px 0 20px 20px;
+	padding:20px 0 10px 10px;
 	width:60%;
 }
 .nav-bar ul{
@@ -43,11 +66,12 @@
 }
 .nav-bar a{
 	color:#343f4e;
-	font-weight:700;
-	font-size:0.7em;
-	letter-spacing: 0.07em;
+	font-weight: bold;
+	font-size:11px;
+	letter-spacing: 0.01em;
 	text-transform:uppercase;
-	font-family: 'HelveticaNeue-Light';
+	font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+	
 }
 .user-login{
 	float:right;
@@ -97,7 +121,9 @@
 	width:100%;
 	padding-top: 45px;
 	text-align:center;
-	font-family: 'HelveticaNeue-Light';
+	font-family: 'San Francisco Display Light', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
 	color:#343f4e;
 	}
 	
@@ -124,17 +150,20 @@
 	
 	
 .wellcome-text h1{
-	color:#434d5a;
-	font-weight:100;
-	font-size:1.7em;
+	color:#343f4e;
+	/*font-weight:regular;
+	font-size:1.7em;*/
+	font-size:32px;
 	padding-bottom: 5px;
 	text-transform:uppercase;
-	font-family: 'HelveticaNeue-Light';
+	font-weight: 100;
+	font-family: 'San Francisco Display Light', sans-serif;
 }
-.wellcome-text span{
+.wellcome-text-menu span{
 	color:#ff7200;
-	font-weight:900;
-	font-family: 'HelveticaNeue-Light';
+	font-size:32px;
+	font-weight:400;
+	font-family: SanFranciscoDisplay-Black, sans-serif;
 }
 .wellcome-text p{
 	color:#6a727d;
@@ -305,6 +334,7 @@
 .solution-wrapper{
 	margin: 0 auto;
 	width: 980px;
+	
 }
 .solution-contents{
 	width:62%;
